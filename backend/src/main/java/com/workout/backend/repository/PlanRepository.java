@@ -1,4 +1,7 @@
 package com.workout.backend.repository;
 
-public interface PlanRepository {
+import com.workout.backend.model.Plan;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PlanRepository extends JpaRepository<Plan, Long> {
 }
